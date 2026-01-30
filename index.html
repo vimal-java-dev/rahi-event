@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rahi Event Decorator | Wedding & Event Decorations</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Rahi Event Decorator</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -13,78 +13,90 @@
     <header class="header">
         <div class="container">
             <h1>Rahi Event Decorator</h1>
-            <p>Transforming Moments Into Memorable Celebrations</p>
-            <nav>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#contact">Contact</a>
-            </nav>
+            <p class="tagline">Turning Celebrations Into Timeless Memories</p>
+            <div class="cta">
+                <a href="tel:+918488816828">Call Rahul Now</a>
+                <a href="https://wa.me/918488816828" target="_blank">WhatsApp</a></br>
+                <a href="tel:+918866332143">Call Jayesh Now</a>
+                <a href="https://wa.me/918866332143" target="_blank">WhatsApp</a>
+            </div>
         </div>
     </header>
 
-    <section id="about" class="about section">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>
-                Rahi Event Decorator specializes in custom event decoration and styling for weddings, anniversaries,
-                birthdays,
-                and other special occasions. We create unique décor concepts that bring your vision to life.
-                :contentReference[oaicite:1]{index=1}
-            </p>
+    <section class="services container">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div>Wedding Decor</div>
+            <div>Bride Entry</div>
+            <div>Stage & Mandap</div>
+            <div>Floral Arrangements</div>
+            <div>Night Events</div>
         </div>
     </section>
 
-    <section id="services" class="services section">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="service-box">
-                <h3>Wedding Decor</h3>
-                <p>Elegant floral arrangements, themed décor, bride entry setups, mandap styling and more.
-                    :contentReference[oaicite:2]{index=2}</p>
-            </div>
-            <div class="service-box">
-                <h3>Event Styling</h3>
-                <p>Birthday decorations, anniversary nights, reception decor, and party themes.
-                    :contentReference[oaicite:3]{index=3}</p>
-            </div>
-            <div class="service-box">
-                <h3>Special Setups</h3>
-                <p>Custom stage design, lighting accents, and photo-worthy installations.
-                    :contentReference[oaicite:4]{index=4}</p>
-            </div>
-        </div>
-    </section>
+    <section class="gallery container">
+        <h2>Gallery</h2>
 
-    <section id="gallery" class="gallery section">
-        <div class="container">
-            <h2>Gallery</h2>
+        <div class="gallery-category">
+            <h3 onclick="toggleGallery(this)">Wedding Decor</h3>
             <div class="gallery-grid">
-                <!-- Replace with real photo URLs -->
-                <img src="images/bridal-entry.jpg" alt="Bridal Entry Decor" />
-                <img src="images/floral-arrangement.jpg" alt="Floral Arrangement" />
-                <img src="images/wedding-stage.jpg" alt="Wedding Stage" />
-                <img src="images/anniversary-night.jpg" alt="Anniversary Event Decor" />
+                <img src="images/wedding1.jpg">
+            </div>
+        </div>
+
+        <div class="gallery-category">
+            <h3 onclick="toggleGallery(this)">Bride Entry</h3>
+            <div class="gallery-grid">
+                <img src="images/bride1.jpg">
+            </div>
+        </div>
+
+        <div class="gallery-category">
+            <h3 onclick="toggleGallery(this)">Stage & Mandap</h3>
+            <div class="gallery-grid">
+                <img src="images/stage1.jpg">
+            </div>
+        </div>
+
+        <div class="gallery-category">
+            <h3 onclick="toggleGallery(this)">Floral Arrangements</h3>
+            <div class="gallery-grid">
+                <img src="images/floral1.jpg">
+            </div>
+        </div>
+
+        <div class="gallery-category">
+            <h3 onclick="toggleGallery(this)">Night Events</h3>
+            <div class="gallery-grid">
+                <img src="images/night1.jpg">
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact section">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p><strong>Call / WhatsApp:</strong> +91 84888 16828</p>
-            <p><strong>Call / WhatsApp:</strong> +91 88663 32143</p>
-            <p><strong>Email:</strong> rahieventsmail@example.com</p>
-            <p>Follow us on Instagram:
-                <a href="https://www.instagram.com/rathod.rahul22/" target="_blank">@rathod.rahul22</a>
-            </p>
-        </div>
+    <section class="about container">
+        <h2>About Us</h2>
+        <p>
+            Rahi Event Decorator specializes in elegant wedding and event décor.
+            We transform venues into unforgettable experiences with creativity,
+            precision, and premium styling.
+        </p>
     </section>
 
-    <footer class="footer">
-        <p>&copy; 2026 Rahi Event Decorator. All rights reserved.</p>
+    <section class="contact container">
+        <h2>Contact</h2>
+        <p><strong>Phone No.1:</strong> +91 84888 16828</p>
+        <p><strong>Phone No.2:</strong> +91 88663 32143</p>
+        <p><strong>Address:</strong><br>
+            Near Gayatri Temple, Rakhodiya Talav,<br>
+            Valsad – 396001, Gujarat, India.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 Rahi Event Decorator</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
