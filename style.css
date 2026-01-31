@@ -1,8 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Segoe UI", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
 }
 
 body {
@@ -17,24 +16,66 @@ body {
 }
 
 .header {
-    background: #f8f6f2;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)),
+        url("images/hero.jpg") center/cover no-repeat;
+    color: #fff;
     text-align: center;
-    padding: 100px 20px;
+    padding: 140px 20px;
+}
+
+.header h1 {
+    font-size: 3rem;
+    letter-spacing: 1px;
 }
 
 .tagline {
-    margin-top: 10px;
-    color: #777;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    color: #f1f1f1;
 }
 
 .cta a {
     display: inline-block;
-    margin: 15px 10px;
-    padding: 12px 30px;
+    margin: 25px 12px 0;
+    padding: 14px 36px;
     background: #c9a24d;
-    color: white;
+    color: #fff;
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.cta a:hover {
+    background: #b08d3c;
+    transform: translateY(-2px);
+}
+
+section {
+    padding: 90px 20px;
+}
+
+.services,
+.about,
+.contact {
+    background: #fafafa;
+}
+
+section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+section h2::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: #c9a24d;
+    display: block;
+    margin: 15px auto 0;
 }
 
 .services h2,
@@ -52,17 +93,35 @@ body {
 }
 
 .service-grid div {
-    padding: 25px;
-    border: 1px solid #eee;
+    padding: 35px 25px;
+    background: #fff;
+    border-radius: 14px;
     text-align: center;
-    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
 }
+
+.service-grid div:hover {
+    transform: translateY(-6px);
+}
+
 
 .gallery-category h3 {
     cursor: pointer;
-    margin: 25px 0 10px;
+    margin: 40px 0 15px;
+    font-size: 1.4rem;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery-category h3::after {
+    content: "+";
+    font-size: 1.6rem;
     color: #c9a24d;
 }
+
 
 .gallery-grid {
     display: none;
